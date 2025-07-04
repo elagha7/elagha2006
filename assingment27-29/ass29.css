@@ -1,0 +1,182 @@
+.parent {
+    width: 800px;
+    background-color: #eee;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.r1,
+.r2,
+.r3,
+.r4{
+    background-color: #ccc;
+    font-weight: bold;
+    margin-top: 15px;
+    float: left;
+    margin-left: 15px;
+    padding: 10px 0;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+.r1{
+    width: calc(100% - 30px);
+}
+.r2{
+    width: calc((100% - 60px)/3);
+}
+.r3{
+    width: calc((100% - 45px) / 2);
+}
+.r4{
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 15px;
+}
+.green,.blue,.red,.black{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.green{
+    background-color: #009688;
+    top: 401px;
+    left: 17px;
+    z-index: 4;
+}
+.red{
+    background-color: #f44336;
+    left: 27px;
+    top: 407px;
+    position: absolute;
+    z-index: 5;
+}
+.blue{
+    background-color: #2196f3;
+    position: absolute;
+    z-index: 3;
+    top: 390px;
+    left: 10px;
+}
+.black{
+  background-color: black;
+    top: 400px;
+    left: 10px;
+}
+.Lorem{
+    width: 400px;
+    padding: 20px ;
+    margin: 30px auto;
+    background-color: #eee;
+    border: 2px solid;
+    border-color: #f44336 #2196f3;
+     text-align: center;
+     position: relative;
+}
+.top-left{
+ background-color: #2196f3;
+  color: white;
+    padding: 5px 15px;
+    border-right: 2px solid #f44336;
+    position: absolute;
+    top: -15px;
+    left: -20px;
+}
+.top-right{
+    background-color: #2196f3;
+    color: white;
+    padding: 5px 15px;
+    border-left: 2px solid #f44336;
+    position: absolute;
+    top: -15px;
+    right: -20px;
+}
+.bottom-left{
+    background-color: #2196f3;
+    color: white;
+    padding: 5px 15px;
+    border-right: 2px solid #f44336;
+    position: absolute;
+    bottom: -15px;
+    left: -20px;
+}
+.bottom-right{
+    background-color: #2196f3;
+    color: white;
+    padding: 5px 15px;
+    border-left: 2px solid #f44336;
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+}
+.html,.css,.js{
+    background-color: #eee;
+    width: 400px;
+    padding: 3px;
+    margin: 20px auto;
+    list-style-type: none;
+}
+li{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+/*  الباندينج هنا خليناه 0 عشان احنا عايزين الترقيم يقرب من الهيد لاين الرئسى تبعه و هتقوله ايه الفرق بينه وبين 
+المعلم ده بيخليه يتحكم فى مكانه اذا كان داخل الحدود ولالا list-style-position: inside; */
+ .css ol {
+  list-style-type: upper-roman;
+  padding: 0;
+  list-style-position: inside;
+}
+.js ul{
+    list-style-type: circle; 
+    padding-left: 0;
+    margin: 10px;
+}
+.js ul li{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    list-style-position: inside;
+    width: auto;
+}
+table {
+  width: 700px;
+  border: 1px solid #cccccc0f;
+  border-spacing: 1px;
+  margin: 20px auto;
+
+}
+table .head td{
+    background-color: #404040;
+    color: white;
+   padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-spacing: 5px;
+}
+tbody td{
+    background-color: #eee;
+    text-align: center;
+    padding: 5px;
+    border-spacing: 1px;
+}
+.view{
+    background-color: #0689e7;
+    color: white;
+    padding: 5px 10px;
+    border-style: none;
+    font-weight: bold;
+}
+.delete{
+    background-color: #f50676;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-style: none;
+     font-weight: bold;
+}
+caption{
+    padding:5px;
+    margin: 5px;
+}
