@@ -223,3 +223,27 @@ body{
     left: 11px;
     top: 25px;
 }
+.Elagha{
+    width: 100px;
+    height: 100px;
+    border-radius: 32px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: rgb(10 82 120);
+    color: white;
+    position: relative;
+    left: 239px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 7px 0px;
+    font-family: "Manufacturing Consent", system-ui;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+}
+.Elagha::before{
+    position: absolute;
+    left: 10px;
+    top: 32px;
+    content: attr(data-person);
+}
