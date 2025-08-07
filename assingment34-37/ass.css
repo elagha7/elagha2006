@@ -247,3 +247,11 @@ body{
     top: 32px;
     content: attr(data-person);
 }
+.image{
+       background-color: #431ee9;
+    width: 50vw;
+    position: relative;
+    height: 50vh;
+    left: 467px;
+    top: -5px;
+}

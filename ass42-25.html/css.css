@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.parent{
+    background-color: #f2f2f4;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    transition: margin-top 0.5s 0.5s ease;
+}
+.one{
+text-align: center;
+margin: 20px;
+transition-duration: 0.5s;
+transition-delay: 0.5s;
+  transition-property: margin-top;
+}
+.two{
+text-align: center;
+background-color: #dededc;
+height: 20px;
+ transition: transform    1s ease 0.5s;
+}
+.parent:hover {
+  margin-top: 0px; 
+}
+
+.parent:hover .two {
+  transform: translateY(20px);
+}
