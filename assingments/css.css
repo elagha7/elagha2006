@@ -6,6 +6,11 @@ body{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+:root{
+  --background-color:#dddddd;
+  --margin:10px;
+  --padding:10px;
+}
 .parent1,.parent2,.parent3{
 width: 600px;
     height: 300px;
@@ -79,4 +84,61 @@ width: 600px;
 .parent3 .two{
     align-self: flex-start;
     width: 50%;
+}
+.page{
+ background-color: #eee;
+    width: 926px;
+    height: 550px;
+    margin:var(--margin);
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.logo,.links{
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    display: flex;
+    width:calc(100%/6) ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.links{
+    list-style-type: none;
+    justify-content:space-between;
+}
+.main-area{
+     display: flex;
+    justify-content: space-between;
+}
+.content,.sidebar{
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    display: flex;
+    width:calc(100%/5) ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 400px;
+    
+}
+.content{
+    list-style-type: none;
+    justify-content:space-between;
+}
+.footer{
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    
 }
