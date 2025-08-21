@@ -14,14 +14,14 @@ body{
     padding: 20px;
     transition: margin-top 0.5s 0.5s ease;
 }
-.one{
+.one1{
 text-align: center;
 margin: 20px;
 transition-duration: 0.5s;
 transition-delay: 0.5s;
   transition-property: margin-top;
 }
-.two{
+.two1{
 text-align: center;
 background-color: #dededc;
 height: 20px;
@@ -31,7 +31,7 @@ height: 20px;
   margin-top: 0px; 
 }
 
-.parent:hover .two {
+.parent:hover .two1 {
   transform: translateY(20px);
 }
 .Elzero1{
@@ -290,4 +290,259 @@ display: grid;
 }
 .box2:hover{
   transform: rotatex(-180deg);
+}
+.span1{
+  background-color: #eee;
+    margin: 60px auto;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border:5px solid #eb2455;
+    border-top-color:transparent ;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+   0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+.span1::before{
+   content: "";
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    border: 5px solid #0090ff;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    transition-duration: .5s;
+    top: -11px;
+    left: -12px;
+}
+.span1::after{
+content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 5px solid #fc9000;
+    border-radius: 50%;
+    border-left-color: transparent;
+    transition-duration: .5s;
+    top: -20px;
+    left: -19px;
+}
+.span1:hover{
+animation-play-state: paused;
+}
+.span2{
+  background-color: #eee;
+    margin: 60px auto;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border:5px solid #2490ff;
+    border-bottom-color:transparent ;
+    border-radius: 50px;
+    position: relative;
+    animation-name: spin2;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin2{
+   0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+.span2::before{
+   content: "";
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    border: 5px solid #fc9000;
+        border-bottom-color:transparent ;
+    border-radius: 50%;
+   animation-name: spin2;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  top: -12px;
+    left: -12px;
+}
+.span2::after{
+content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 5px solid  black;
+    border-radius: 50%;
+   animation-name: spin2;
+       border-bottom-color:transparent ;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    top: -19px;
+    left: -20px;
+}
+.span2:hover, .span2:hover::before, .span2:hover::after{
+    animation-play-state: running;
+}
+.Elzero6{
+  width: 400px;
+  height: 400px;
+  margin: 80px auto;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
+    grid-template-rows: auto;
+    gap: 15px 15px;
+    position: relative;
+}
+.E div,
+.L div{
+    background-color: #363234;
+}
+.E,
+.L{
+    display: grid;
+     grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(7, 50px);
+}
+.one{
+   grid-area: 1 / 1 /  2/  5;
+}
+.two{
+   grid-area: 2 / 1 /  4 / 2;
+}
+.three{
+   grid-area: 4 / 1 / 4/  5;
+}
+.four{
+   grid-area: 5 / 1 / span 2 / 2;
+}
+.five{
+grid-area: 7 / 1 / 8 / 5;
+}
+.first{
+  grid-area: 1/1/8/1;
+}
+.second{
+    grid-area:7/1/8/span 4;
+
+}
+.Elzero6::before{
+  content: "";
+  position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    left: 214px;
+    top: 65px;
+ animation-name: spin4;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+@keyframes spin4{
+   0% {
+    left: 214px;
+    top: 65px;
+  }
+   10% {
+     left: 67px;
+    top: 65px;
+  }
+   20% {
+       left: 67px;
+     top: 218px;
+  }
+   30% {
+    left: 214px;
+    top: 218px;
+  }
+   40% {
+     left: 67px;
+    top: 218px;
+  }
+   50% {
+    left: 67px;
+    top: 365px;
+  }
+  60% {
+   left: 214px;
+    top: 365px;
+  }
+  70% {
+    left: 67px;
+    top: 365px;
+  }
+   80% {
+   left: 67px;
+    top: 65px;
+  }
+   90% {
+    left: 214px;
+    top: 65px;
+  }
+   100% {
+     left: 214px;
+    top: 65px;
+  }
+}
+.Elzero6::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    right: -107px;
+    bottom: -5px;
+     opacity: 0;
+    animation-name: spin5;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-timing-function: linear;
+}
+@keyframes spin5{
+0%{
+       right: -107px;
+    bottom: -5px;
+        opacity: 0;
+    }
+    30%{
+        right: 40px;
+        bottom: -5px;
+        opacity: 1;
+    }
+    60%{
+       right: 40px;
+        bottom: 170px;
+        opacity: 1;
+    }
+    90%{
+       right: 40px;
+        bottom: 290px;
+        opacity: 1;
+    }
+    100%{
+        right: 40px;
+        bottom: 290px;
+        opacity: 0;
+    }
 }
